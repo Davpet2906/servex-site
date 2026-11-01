@@ -24,5 +24,4 @@ A static site with no build step and no dependencies. It runs on the Cloudflare 
 **Custom domain:** in the project, open **Custom domains** and add `servexgroup.com`.
 
 ## Before launch
-- Replace `hello@servexgroup.com` in `index.html` with your real email.
 - Review the service bullet points so they match what each company actually offers.

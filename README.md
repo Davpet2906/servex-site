@@ -17,12 +17,23 @@ A static site with no build step and no dependencies, hosted free on Cloudflare 
 - `templates/blog-post.html`: starting point for new blog posts (not published)
 - `wrangler.jsonc`: Cloudflare settings (serves `404.html` for missing pages)
 - `.assetsignore`: repo files that are not published on the website
+- `pricing/index.html`, `cart.js`, `catalog.json`: pricing page and cart (prices live in `catalog.json`)
+- `src/worker.js`: the checkout function (`POST /api/checkout`, creates a Stripe Checkout session)
+- `checkout/success.html`: thank-you page after payment
+- `terms.html`, `privacy.html`: Terms of Service and Privacy Policy
+- `consent.js`: cookie banner (Google Consent Mode); loaded on every page before Google Analytics
 
 ## Deploy
 The Cloudflare Worker `servex-site` is connected to this GitHub repo. Every commit to `main` redeploys the site automatically (deploy command `npx wrangler deploy`, settings in `wrangler.jsonc`). Builds and logs are under Cloudflare → Workers & Pages → servex-site → Deployments.
 
 ## Before launch
 - Review the service bullet points so they match what each company actually offers.
+
+## Pricing and payments
+- Change a price or package: edit `catalog.json`. The pricing page and checkout both read it, so they always match.
+- Payments go through Stripe. The secret key is a Cloudflare secret named `STRIPE_SECRET_KEY` (never put it in this repo). Without it, checkout politely asks customers to email instead.
+- Stripe Tax: set `STRIPE_AUTOMATIC_TAX` to `"on"` in `wrangler.jsonc` once Stripe Tax is set up in the Stripe dashboard.
+- Checkout requires customers to accept the Terms of Service; the acceptance time is saved on the Stripe payment.
 
 ## Analytics and SEO
 - Google Analytics 4: Measurement ID `G-1CSWVTF1F6`. The tag sits right after `<meta charset>` on every page.

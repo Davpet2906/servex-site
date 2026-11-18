@@ -1,10 +1,17 @@
 {
-  // Cloudflare Workers static-assets config for servexgroup.com
+  // Cloudflare Worker for servexgroup.com: static site + /api/checkout (Stripe)
   "name": "servex-site",
+  "main": "src/worker.js",
   "compatibility_date": "2026-11-17",
   "assets": {
     "directory": "./",
+    "binding": "ASSETS",
     // Serve 404.html (with a 404 status) for URLs that don't exist
-    "not_found_handling": "404-page"
-  }
+    "not_found_handling": "404-page",
+    // Only /api/* runs code; everything else is served as static files
+    "run_worker_first": ["/api/*"]
+  },
+  "observability": { "enabled": true },
+  // Turn to "on" after Stripe Tax is set up in the Stripe dashboard
+  "vars": { "STRIPE_AUTOMATIC_TAX": "off" }
 }

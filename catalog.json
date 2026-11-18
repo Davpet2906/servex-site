@@ -1,0 +1,188 @@
+{
+  "currency": "usd",
+  "note": "Single source of truth for the pricing page and checkout. Amounts are in whole US dollars. interval: null = one-time, \"month\" = monthly plan. Prices approved Nov 17 2026.",
+  "groups": [
+    {
+      "id": "digital",
+      "company": "Servex Digital",
+      "label": "Websites & SEO",
+      "accent": "digital",
+      "items": [
+        {
+          "id": "seo-foundation",
+          "name": "SEO Foundation",
+          "price": 750,
+          "interval": null,
+          "summary": "Get found on Google. A one-time technical setup for an existing site.",
+          "features": [
+            "Google Analytics 4 and Search Console setup",
+            "Sitemap, robots.txt and redirects",
+            "Titles and descriptions for up to 10 pages",
+            "Structured data for your business",
+            "Written audit with priorities"
+          ],
+          "maxQty": 1
+        },
+        {
+          "id": "seo-growth",
+          "name": "SEO Growth",
+          "price": 900,
+          "interval": "month",
+          "featured": true,
+          "summary": "Steady, compounding traffic. Content and optimization every month.",
+          "features": [
+            "2 search-optimized articles per month",
+            "On-page improvements to existing pages",
+            "Technical monitoring and fixes",
+            "Monthly traffic and ranking report"
+          ],
+          "maxQty": 1
+        },
+        {
+          "id": "landing-page",
+          "name": "Landing Page",
+          "price": 1500,
+          "interval": null,
+          "summary": "One fast, focused page built to turn ad clicks into leads.",
+          "features": [
+            "Copy and design for one page",
+            "Mobile-first and fast",
+            "Analytics and conversion tracking",
+            "Delivered in about 2 weeks"
+          ],
+          "maxQty": 5
+        },
+        {
+          "id": "business-website",
+          "name": "Business Website",
+          "price": 4500,
+          "interval": null,
+          "summary": "A complete, professional website for your business.",
+          "features": [
+            "Up to 6 pages",
+            "Custom design in your brand",
+            "SEO Foundation included",
+            "Contact forms and analytics",
+            "Delivered in about 4 to 6 weeks"
+          ],
+          "maxQty": 1
+        },
+        {
+          "id": "website-care",
+          "name": "Website Care",
+          "price": 300,
+          "interval": "month",
+          "summary": "Hosting, updates and small changes, handled for you.",
+          "features": [
+            "Hosting and SSL",
+            "Updates and daily backups",
+            "Uptime monitoring",
+            "Up to 1 hour of edits per month"
+          ],
+          "maxQty": 1
+        }
+      ]
+    },
+    {
+      "id": "secure",
+      "company": "Servex Secure",
+      "label": "Cybersecurity",
+      "accent": "secure",
+      "items": [
+        {
+          "id": "security-baseline-review",
+          "name": "Security Baseline Review",
+          "price": 1200,
+          "interval": null,
+          "summary": "Find and close the gaps attackers use most.",
+          "features": [
+            "Review of accounts, devices, email and backups",
+            "Check of SPF, DKIM and DMARC",
+            "Prioritized fix list",
+            "1-hour walkthrough call"
+          ],
+          "maxQty": 1
+        },
+        {
+          "id": "website-security-audit",
+          "name": "Website Security Audit",
+          "price": 2500,
+          "interval": null,
+          "summary": "A hands-on test of your website or web app.",
+          "features": [
+            "Testing against common web vulnerabilities",
+            "Configuration and header review",
+            "Report with evidence and fixes",
+            "Free retest after you fix"
+          ],
+          "maxQty": 3
+        },
+        {
+          "id": "managed-security",
+          "name": "Managed Security",
+          "price": 600,
+          "interval": "month",
+          "featured": true,
+          "summary": "Ongoing protection and a team to call when something looks wrong.",
+          "features": [
+            "Monthly security check-up",
+            "Alert review and response guidance",
+            "Staff phishing awareness tips",
+            "Priority support"
+          ],
+          "maxQty": 1
+        }
+      ]
+    },
+    {
+      "id": "advisory",
+      "company": "Servex Advisory",
+      "label": "Consulting",
+      "accent": "advisory",
+      "items": [
+        {
+          "id": "strategy-session",
+          "name": "Strategy Session",
+          "price": 350,
+          "interval": null,
+          "summary": "Two focused hours on your biggest question, with written notes after.",
+          "features": [
+            "2-hour video session",
+            "Preparation from a short brief",
+            "Written summary and next steps"
+          ],
+          "maxQty": 10
+        },
+        {
+          "id": "build-or-buy-review",
+          "name": "Build-or-Buy Review",
+          "price": 1800,
+          "interval": null,
+          "summary": "A clear recommendation before you commit to new software.",
+          "features": [
+            "Requirements and options review",
+            "3-year cost comparison",
+            "Vendor shortlist or build outline",
+            "Decision document"
+          ],
+          "maxQty": 1
+        },
+        {
+          "id": "advisory-retainer",
+          "name": "Advisory Retainer",
+          "price": 1500,
+          "interval": "month",
+          "featured": true,
+          "summary": "A senior partner on call for technology and growth decisions.",
+          "features": [
+            "Up to 6 hours per month",
+            "Monthly planning session",
+            "Email and chat access",
+            "Vendor and hiring support"
+          ],
+          "maxQty": 1
+        }
+      ]
+    }
+  ]
+}

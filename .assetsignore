@@ -8,3 +8,5 @@ templates
 node_modules
 .wrangler
 .DS_Store
+src
+.dev.vars

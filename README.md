@@ -5,7 +5,7 @@ A static site with no build step and no dependencies, hosted free on Cloudflare 
 ## Files
 - `index.html`: main website
 - `brand.html`: brand guide (logo, colors, type, voice)
-- `styles.css`: all styles (with automatic light and dark mode)
+- `styles.css`: all styles (with automatic light and dark mode). Browsers cache it for a day, so after changing it, bump the `?v=` number in the pages' stylesheet link.
 - `logo.svg` / `logo-white.svg`: full logo for light / dark backgrounds
 - `logo-mark.svg`: the X symbol on its own
 - `favicon.svg`, `logo-512.png`: app icon

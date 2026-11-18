@@ -220,6 +220,7 @@ footer a:hover { color: var(--text); }
 .post-card:hover { transform: translateY(-3px); box-shadow: 0 24px 60px -28px rgba(0,0,0,.2); }
 .post-card h2 { font-size: 23px; line-height: 1.2; letter-spacing: -0.02em; }
 .post-card p { color: var(--text-2); font-size: 16px; flex: 1; }
+.post-card .post-meta { flex: none; }
 .post-card .more { font-size: 15px; font-weight: 500; color: var(--brand); }
 .post-card .more::after { content: " ›"; }
 .post-empty { grid-column: 1 / -1; text-align: center; padding: 60px 24px; border-radius: var(--radius); background: var(--bg-alt); }

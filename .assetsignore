@@ -1,0 +1,10 @@
+# Repo files that are not published on the website
+.git
+.gitignore
+.assetsignore
+wrangler.jsonc
+README.md
+templates
+node_modules
+.wrangler
+.DS_Store

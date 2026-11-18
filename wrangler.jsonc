@@ -1,0 +1,10 @@
+{
+  // Cloudflare Workers static-assets config for servexgroup.com
+  "name": "servex-site",
+  "compatibility_date": "2026-11-17",
+  "assets": {
+    "directory": "./",
+    // Serve 404.html (with a 404 status) for URLs that don't exist
+    "not_found_handling": "404-page"
+  }
+}

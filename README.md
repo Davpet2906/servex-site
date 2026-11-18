@@ -11,6 +11,8 @@ A static site with no build step and no dependencies. It runs on the Cloudflare 
 - `favicon.svg`, `logo-512.png`: app icon
 - `404.html`: not-found page
 - `_headers`: Cloudflare security and cache headers
+- `sitemap.xml`: list of pages for Google (submitted in Search Console)
+- `robots.txt`: lets search engines crawl the site and points them to the sitemap
 
 ## Deploy to Cloudflare Pages (free)
 **Connected to GitHub (updates automatically):**
@@ -25,3 +27,14 @@ A static site with no build step and no dependencies. It runs on the Cloudflare 
 
 ## Before launch
 - Review the service bullet points so they match what each company actually offers.
+
+## Analytics and SEO
+- Google Analytics 4: Measurement ID `G-1CSWVTF1F6`. The tag sits right after `<meta charset>` on every page.
+- Google Search Console: `servexgroup.com`, with `sitemap.xml` submitted.
+- Cloudflare serves clean URLs: `brand.html` is live at `/brand`. Link to and list pages by their clean URL.
+
+## Adding a page or blog post
+1. Copy the `<head>` of an existing page, including the Google Analytics snippet.
+2. Give it a unique `<title>`, `<meta name="description">` and `<link rel="canonical" href="https://servexgroup.com/...">`.
+3. Add its clean URL to `sitemap.xml` with today's date in `<lastmod>`, and update `<lastmod>` on any page you change.
+4. After it goes live, use URL Inspection → Request indexing in Search Console to get it crawled sooner.
